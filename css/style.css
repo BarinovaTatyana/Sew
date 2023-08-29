@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+        /* Color */
+    --main-color:#37745B;
+    --second-color:#217074;
+    --contrast-color:#8B9D77;
+    --help-color: #EDC5AB;
+    --light-color:#E7EAEF;
+    --swiper-navigation-color: var(--contrast-color);
+    /* font-size */
+    --regular-text: 22px;
+    --small-text: 12px;
+    --header-text: 38px;
+    --main-text: 48px;
+}
+/* Containers */
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1 0 auto;
+    max-width: 45%;
+}
+
+.finfo {
+    align-items: center;
+}
+
+.social {
+    margin: 15px;
+}
+header {
+    color: var(--light-color);
+    background-color: var(--contrast-color);
+    height: 110px;
+}
+footer {
+    height: 650px;
+    color: var(--light-color);
+    background-color: var(--contrast-color);
+}
+
+
+/* Offer */
+
+.offer {
+    height: 684px;
+    background: url(../images/back.jpg);
+    background-size: cover;
+}
+
+.offer-content {
+    height: 599px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.51);
+    color: var(--light-color);
+    flex-direction: column;
+}
+
+
+/* Catalog */
+
+.products {
+    
+    height: 756px;
+    flex-direction: column;
+    color: var(--main-color);
+}
+
+.cards {
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+}
+
+.swiper {
+    width: 85%;
+}
+
+.fix-height {
+    height: 60px;
+}
+
+
+
+/* Numbers */
+
+.numbers {
+    height: 298px;
+    color: var(--light-color);
+    background-color: var(--contrast-color);
+}
+
+
+
+/* FOS */
+
+.feedback {
+    height: 836px;
+    color: var(--contrast-color);
+    gap: 40px;
+}
+
+.fieldset {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    border: 8px solid var(--contrast-color);
+    gap: 10px;
+    width: 400px;
+}
+
+.text {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--light-color);
+    width: 100%;
+}
+
+.text::placeholder {
+    color: var(--light-color);
+}
+
+.feedback-info {
+    width: 500px;
+}
+
+.info-cards {
+    flex-wrap: wrap;
+}
+
+.info-cards>figure {
+    width: 45%;
+}
+
+
+/* Footer */
+
+.map {
+    width: 45vw;
+    height: 60vh;
+}
+
+
+/* Text */
+
+.small-text {
+    font-size: var(--small-text);
+}
+
+.main-text {
+    font-size: var(--main-text);
+    font-weight: 900;
+    text-align: center;
+}
+
+.regular-text {
+    margin-top: 20px;
+    font-size: var(--regular-text);
+}
+
+.header-text {
+    font-size: var(--header-text);
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Pictures */
+
+.card-picture:hover {
+        transform: scale(1.1);
+}
+.card-picture {
+    vertical-align: bottom;
+    transition: all .3s;
+}
+
+.icon {
+    margin: 7px;
+    max-width: 35px;
+    transition: all .3s;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+
+.logo {
+    min-width: 165px;
+}
+
+.flogo {
+margin: 0;
+}
+.card-picture {
+    width: 100%;
+}
+
+.sm-pic {
+    width: 192px;
+}
+
+
+/* Buttons */
+
+.btn {
+    background-color: var(--contrast-color);
+    color: var(--light-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-feedback {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.swiper-button-prev:hover{
+    transform: scale(1.5);
+    color: #144042;
+}
+
+.swiper-button-next:hover{
+    transform: scale(1.5);
+    color: #144042;
+    ;
+}
+
+/* MEDIA */
+
+@media screen and (max-width:650px) and (min-width:375px) {
+    header {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .slogan {
+        display: none;
+    }
+    
+    .icon {
+        min-width: 10px;
+        max-width: 25px;
+        margin: 3px;
+    }
+    .logo {
+        min-width: 70px;
+    }
+    .offer {
+        width: auto;
+        height: 450px;
+        background: url(../images/back.jpg);
+        background-size: cover;
+    }
+    .swiper-button-prev {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .swiper-button-next {
+        display: none;
+        visibility: hidden;
+    }
+    .offer-content{
+        height: 250px;
+    }
+
+    .main-text{
+        font-size: var(--regular-text);
+    }
+    .btn {
+        height: 30px;
+        width: auto;
+        margin: 10px;
+        padding: 0px 2px;   
+    }
+    .regular-text{
+        font-size: 20px;
+    }
+    .btn.regular-text {
+        font-size: 15px;
+    }
+    .header-text{
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0px 20px;
+    }
+
+    .numbers{
+        height: 60px;
+    }
+   
+    section.numbers.d-flex-evenly {
+        display: none;
+    }
+
+    .feedback {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .feedback-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .d-flex-evenly.products {
+        margin-bottom: 180px;
+    }
+    .info-cards>figure {
+        width: 100%;
+        margin: 0px 20px 10px 20px;
+    }
+    .d-flex-evenly{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   .check{
+    font-size: 13px;
+   }
+    .map {
+        width: 85vw;
+        height: 50vh;
+    }
+    .icon.logo.flogo{
+        display: none;
+    }
+   
+    .social {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 3px;
+    }
+   
+    .commercial {
+        display: flex;
+        justify-content: end;
+    }
+
+}
