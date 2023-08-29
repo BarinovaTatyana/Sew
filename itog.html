@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowbt-Одежда по вашим размерам</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="d-flex-evenly">
+        <section class="d-flex-center">
+            <img class="icon logo" src="images/logom1.png" alt="">
+            <p class="slogan">Пошив одежды по вашим размерам</p>
+        </section>
+        <section class="d-flex-evenly flex-1 small-text">
+            <figure class="d-flex-center">
+                <a href="mailto:meowbt@gmail.com"><img class="icon" src="images/mail.png" alt=""></a>
+                <p class="slogan">meowbt@gmail.com</p>
+            </figure>
+            <figure class="d-flex-center">
+                <a href="https://go.2gis.com/kwbsi"><img class="icon" src="images/map.png" alt="" ></a>
+                <p class="slogan">г. Омск<br>Ленина, 12</p>
+                
+            </figure>
+            <figure class="d-flex-center">
+                <a href="tel:+79533977797"><img class="icon" src="images/phone.png" alt=""></a>
+                <p class="slogan"><span>8 (953) 397 77 97</span><br>Ежедневно</p>
+            </figure>
+        </section>
+    </header>
+    
+
+    <main>
+        <section class="offer d-flex-center">
+            <section class="offer-content d-flex-center">
+                <h1 class="main-text">Meowbt - одежда из качественных материалов по вашим меркам</h1>
+                <p class="regular-text center">
+                </p>
+                <button class="btn regular-text" onclick="toProducts()">Перейти к каталогу</button>
+            </section>
+        </section>
+
+        <section class="products d-flex-evenly" id="products">
+            <h2 class="header-text">Каталог базовых изделий</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper" id="sw">
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
+        <section class="numbers d-flex-evenly">
+            <div>
+                <h2 class="main-text center">1000+</h2>
+                <p class="regular-text center">довольных покупателей</p>
+            </div>
+            <div>
+                <h2 class="main-text center">98%</h2>
+                <p class="regular-text center">положительных отзывов</p>
+            </div>
+            <div>
+                <h2 class="main-text center">24/7</h2>
+                <p class="regular-text center">поддержка</p>
+            </div>
+        </section>
+
+        <section class="feedback d-flex-center" id="fb">
+            <fieldset class="d-flex-center fieldset">
+                <h3 class="header-text">Заполните поля</h3>
+                <p>чтобы специалист помог вам с подбором изделия вашей мечты</p>
+                <input class="text" type="text" id="fbname" placeholder="имя">
+                <input class="text" type="text" id="fbphone" placeholder="номер телефона">
+                <input class="text" type="text" id="fbcomment" placeholder="комментарий">
+                <button class="btn regular-text btn-feedback" id="feedbackbtn" >Свяжитесь со мной!</button>
+                <div class="check">
+                    <input type="checkbox" id="checkbox">Соглашаюсь с <a href="https://i.pinimg.com/originals/15/1d/a9/151da98ceef9a9a54a7eac4af04be712.gif">условиями передачи данных</a>
+                </div>
+            </fieldset>
+            <section class="feedback-info">
+                <h3 class="header-text">Почему стоит выбрать именно нас?</h3>
+                <section class="info-cards d-flex-between">
+                    <figure>
+                        <img class="icon" src="images/ruler.png" alt="">
+                        <p>Изделие изготавливается исключительно по вашим меркам
+                        </figure>
+                    <figure>
+                        <img class="icon" src="images/heart.png" alt="">
+                        <p>Каждый заказ - это индивидуальная ручная работа, в которую мы вкладываем любовь к нашим клиентам</figure>
+                    <figure>
+                        <img class="icon" src="images/pet.png" alt="">
+                        <p>10% от стоимости вашего заказа направляется в приют для животных</figure>
+                    <figure>
+                        <img class="icon" src="images/map.png" alt="">
+                        <p>Осуществляем доставку по всей России</figure>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="d-flex-evenly">
+        <section class="map" id="map">
+        </section>
+
+        <section>
+
+        </section>
+        <div class="finfo">
+            <div> <img class="icon logo flogo" src="images/logom1.png" alt="">
+            <h3>Пошив одежды по вашим размерам</h3>
+        </div>
+        <div class="social">
+            <p>Подписывайтесь на наши социальные сети</p>
+        <a href="https://t.me/meowbtnw"><img class="icon" src="images/tg.svg" alt=""></a>
+        <a href="https://wa.me/89533977797"><img class="icon" src="images/wa.svg" alt=""></a>
+        <a href="https://vk.com/meowbt"><img class="icon" src="images/vk.svg" alt=""></a>
+        </div>
+        <div class="commercial">
+            <p>© 2020</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script2.js"></script>
+</body>
+</html>
